@@ -6,6 +6,9 @@ import FrameWork from "./components/FrameWork"
 import Advantages from "./components/Advantages"
 import Canva from "./components/Canva"
 import Faq from "./components/Faq"
+import Additional from "./components/Additional"
+import LottieFor from "./components/LottieFor"
+import Footer from "./components/Footer"
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
    <Advantages/>
    <Canva/>
    <Faq/>
+   <Additional/>
+   <LottieFor/>
+   <Footer/>
    </>
   );
 }
