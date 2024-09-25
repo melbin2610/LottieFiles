@@ -1,0 +1,10 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="c-AsWAM c-AsWAM-faLzkq-size-md c-AsWAM-ibOmiok-css" width="24"  height="24" ><defs><symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-social-black-twitter">
+    <g clip-path="url(#clip0_6280_7217)">
+    <path d="M10.2845 7.97068L15.3068 2.25371H14.1171L9.75444 7.21666L6.27255 2.25371H2.25562L7.52206 9.75928L2.25562 15.7537H3.44532L8.04947 10.5115L11.7274 15.7537H15.7443M3.87471 3.13228H5.70243L14.1162 14.9183H12.2881" fill="currentColor"></path>
+    </g>
+    <defs>
+    <clipPath id="clip0_6280_7217">
+    <rect width="13.4887" height="13.5" fill="none" transform="translate(2.25562 2.25371)"></rect>
+    </clipPath>
+    </defs>
+  </symbol></defs><use href="/assets/icons-sprite.svg#icon-social-black-twitter" xlink:href="#icon-social-black-twitter"></use></svg>
