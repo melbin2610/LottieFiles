@@ -43,28 +43,28 @@ const Advantages = () => {
           {/* Card 4 */}
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col ">
             <Image className="w-[22%]" src={bundle} alt="Bundled packages" />
-            <h1 className="text-[24px] text-[#ffff] font-bold mt-5">Bundled Packages</h1>
+            <h1 className="text-[24px] text-[#ffff] font-bold mt-3">Bundled Packages</h1>
             <h2 className="text-[20px] text-[#5e706d] font-bold">Easily bundle multiple animations into one file.</h2>
           </div>
 
           {/* Card 5 */}
-          <div className="bg-[#1a2829] h-[px] rounded-2xl p-6 flex flex-col ">
-            <Image className="w-[30%]" src={unmacthed} alt="Unmatched performance" />
-            <h1 className="text-[48px] text-[#ffff] font-bold mt-5">Unmatched Performance</h1>
-            <h2 className="text-[20px] text-[#5e706d] font-bold">The new dotLottie runtimes are powered by high-performance graphics engine ThorVG. With the support for the dotLottie format which is 80% smaller than a normal JSON.</h2>
+          <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col ">
+            <Image className="w-[22%]" src={unmacthed} alt="Unmatched performance" />
+            <h1 className="text-[24px] text-[#ffff] font-bold mt-3">Unmatched Performance</h1>
+            <h2 className="text-[20px] text-[#5e706d] font-bold">The new dotLottie runtimes are powered by high-performance graphics engine ThorVG.</h2>
           </div>
 
           {/* Card 6 */}
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col">
             <Image className="w-[22%]" src={performance} alt="Performance" />
-            <h1 className="text-[24px] text-[#ffff] font-bold mt-5">Performance</h1>
+            <h1 className="text-[24px] text-[#ffff] font-bold mt-3">Performance</h1>
             <h2 className="text-[20px] text-[#5e706d] font-bold">Experience fast load times and efficient rendering.</h2>
           </div>
 
           {/* Card 7 */}
           <div className="bg-[#1a2829]  h-[280px] rounded-2xl p-6 flex flex-col ">
             <Image className="w-[22%]" src={js} alt="JavaScript support" />
-            <h1 className="text-[24px] text-[#ffff] font-bold mt-5">JavaScript Support</h1>
+            <h1 className="text-[24px] text-[#ffff] font-bold mt-3">JavaScript Support</h1>
             <h2 className="text-[20px] text-[#5e706d] font-bold">Integrate easily with JavaScript for advanced features.</h2>
           </div>
           
