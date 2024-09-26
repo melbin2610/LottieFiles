@@ -40,7 +40,7 @@ const Additional = () => {
     <div className='bg-[#101417] p-12'>
       <div className='w-[90%] max-w-[1280px] mx-auto'>
         <h1 className='text-[36px] text-[#ffff] font-bold'>Additional resources</h1>
-        <div className='flex justify-between'>
+        <div className='flex justify-between flex-wrap'>
           {resources.map((resource, index) => (
             <ResourceCard key={index} {...resource} />
           ))}

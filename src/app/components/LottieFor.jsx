@@ -1,10 +1,21 @@
 import React from 'react'
 import Image from "next/image";
+import left from "../../../images/svgexport-10.svg"
+import right from "../../../images/svgexport-11.svg"
 
 const LottieFor = () => {
   return (
-    <div className='bg-[#002b2b] p-36'>
-        <div className='w-[90%] max-w-[1280px] mx-auto flex flex-col items-center gap-3'>
+    <div className='bg-[#002b2b]  p-36 '
+    style={{
+      backgroundImage: `url(${left.src}), url(${right.src})`,
+      backgroundPosition: "left, right", // Adjust as needed
+      backgroundSize: "", // Adjust as needed
+       backgroundRepeat: "no-repeat"
+      
+    }}
+    >
+        
+        <div className='w-[90%] max-w-[1280px] mx-auto flex flex-col items-center gap-3 '>
            <h1 className='text-[48px] text-[#ffff] font-bold'>Lottie for developers</h1>
            <p className='text-[20px] text-[#ffff] font-thin'>Discover Lottie ecosystem for integration and tools</p>
            <p className='text-[20px] text-[#ffff] font-thin'>to make implementation of Lottie easier</p>

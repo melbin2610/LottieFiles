@@ -5,11 +5,22 @@ import vue from "../../../images/Vue JS.svg";
 import svelte from "../../../images/Svelte.svg";
 import ios from "../../../images/iOS.svg";
 import android from "../../../images/Android.svg";
+import left from "../../../images/svgexport-10.svg"
+import right from "../../../images/svgexport-11.svg"
+
+
 
 const Spotlight = () => {
   return (
-    <div className="bg-[#002a2a] p-28">
-      <div className="w-[90%] max-w-[1280px] mx-auto flex items-center flex-col">
+    <div className="bg-[#002a2a] p-28 "
+    style={{
+      backgroundImage: `url(${left.src}), url(${right.src})`,
+      backgroundPosition: "left, right", // Adjust as needed
+      backgroundSize: "contain, contain", // Adjust as needed
+       backgroundRepeat: "no-repeat",
+    }}
+    >
+      <div className="w-[90%] max-w-[1280px] mx-auto flex items-center flex-col mt-32">
         <h3 className="text-[20px] text-[#ffff] bg-[#006262] w-[404px] text-center rounded-[15px] font-bold">
           Introducing the new dotLottie Runtimes
         </h3>

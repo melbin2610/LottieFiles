@@ -7,7 +7,7 @@ import ae from "../../../images/ae-.png";
 const Experience = () => {
   return (
     <div className="bg-[#101417] p-28">
-      <div className='w-[90%] max-w-[1280px] mx-auto flex justify-between items-center'>
+      <div className='w-[90%] max-w-[1280px] mx-auto flex justify-between items-center '>
         <div className="">
           <h1 className="text-[50px] text-[#ffff] font-bold">
             Seamless Cross-Platform<br/>Experience
@@ -19,7 +19,7 @@ const Experience = () => {
         </div>
         <Image className="w-[100%] h-[100%]"src={exp} alt="Experience Image" />
       </div>
-      <div className="w-[90%] max-w-[1280px] mx-auto flex justify-between mt-24">
+      <div className="w-[90%] max-w-[1280px] mx-auto flex justify-between mt-24 ">
         <div className="w-[50%]">
         <Image className="block w-[30%]"src={battery} alt="Experience Image" />
         <h2 className="text-[24px] text-[#ffff] font-bold">Enhanced performance</h2>
@@ -38,7 +38,7 @@ const Experience = () => {
         <h2 className="text-[24px] text-[#ffff] font-bold">AE expressions ready</h2>
         <p className="text-[20px] text-[#5e706d] font-bold  w-[87%]">Effortlessly integrate AE Expressions with support across web, iOS, and Android, now seamlessly incorporated into the dotLottie player.</p>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
