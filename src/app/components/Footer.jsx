@@ -80,7 +80,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center justify-between '>
             <div>
             <h4>LottieFiles is by Design Barn Inc.</h4>
             <h4>Copyright © 2024 Design Barn Inc. All rights reserved.</h4>

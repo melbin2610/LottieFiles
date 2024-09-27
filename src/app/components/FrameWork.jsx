@@ -14,7 +14,7 @@ const FrameWork = () => {
         <h1 className='text-center text-[48px] text-[#ffff] font-bold'>Robust Framework Integrations</h1>
         <h2 className='text-center text-[20px] text-[#5e706d] font-bold'>With our runtimes, integrating with various popular frameworks is effortless.</h2>
       </div>
-      <div className="w-[1150px] h-[326px] border border-gray-500 rounded-[10px] mt-14 flex flex-col items-center">
+      <div className="w-[60%] h-[326px] border border-gray-500 rounded-[10px] mt-14 flex flex-col items-center max-sm:hidden">
         <div className='bg-[#20272c] w-full p-4'>
           <nav className="text-base text-[#ffff] flex justify-center gap-[20px] font-[16px]">
             {["Web", "React", "VueJS", "Svelte", "iOS", "Android"].map(framework => (
@@ -24,9 +24,9 @@ const FrameWork = () => {
             ))}
           </nav>
         </div>
-        <div className="bg-[#20272c] w-[840px] h-[216px] rounded-xl mt-5 overflow-auto p-5">
+        <div className="bg-[#20272c] w-[90%] h-[216px] rounded-xl mt-5 overflow-auto p-5">
           <pre className="p-4 text-xs">
-            <code className="text-[#fff] text-[16px]  ">
+            <code className="text-[#fff] text-[14px]  ">
               {`import { DotLottie } from '@lottiefiles/dotlottie-web';
 
 const dotLottie = new DotLottie({

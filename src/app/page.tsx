@@ -22,7 +22,7 @@ export default function Home() {
    <Faq/>
    <Additional/>
    <LottieFor/>
-   <Footer/>
+   {/* <Footer/> */}
    </>
   );
 }

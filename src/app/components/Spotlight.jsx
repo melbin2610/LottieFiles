@@ -18,17 +18,18 @@ const Spotlight = () => {
       backgroundPosition: "left, right", // Adjust as needed
       backgroundSize: "contain, contain", // Adjust as needed
        backgroundRepeat: "no-repeat",
+       
     }}
     >
       <div className="w-[90%] max-w-[1280px] mx-auto flex items-center flex-col mt-32">
-        <h3 className="text-[20px] text-[#ffff] bg-[#006262] w-[404px] text-center rounded-[15px] font-bold">
+        <button className="text-[20px] text-[#ffff] p-1 bg-[#006262] w-[404px] text-center rounded-[15px] font-bold max-xl:text-[16px]  max-md:text-[10px] max-sm:text-[8px] max-sm:w-auto ">
           Introducing the new dotLottie Runtimes
-        </h3>
-        <h1 className="text-[64px] text-[#ffff] font-bold">Built for Performance and</h1>
-        <h1 className="text-[64px] text-[#ffff] font-bold">Cross-Platform Consistency</h1>
-        <p className="text-[20px] text-[#d6fef1b3]">Experience enhanced animations, faster load times, and reliable</p>
-        <p className="text-[20px] text-[#d6fef1b3]">cross-platform support with the new dotLottie Runtimes.</p>
-        <div className="flex space-x-4 mt-10">
+        </button>
+        <h1 className="text-[64px] text-[#ffff] font-bold max-xl:text-[34px] max-md:text-[20px] max-sm:text-[14px] max-sm:mt-3 ">Built for Performance and</h1>
+        <h1 className="text-[64px] text-[#ffff] font-bold max-xl:text-[34px] max-md:text-[20px] max-sm:text-[14px] max-sm:mt-3">Cross-Platform Consistency</h1>
+        <p className="text-[20px] text-[#d6fef1b3] max-xl:text-[16px] max-md:text-[12px] max-sm:text-[10px] max-sm:mt-3">Experience enhanced animations, faster load times, and reliable</p>
+        <p className="text-[20px] text-[#d6fef1b3] max-xl:text-[16px] max-md:text-[12px] max-sm:text-[10px] max-sm:mt-3">cross-platform support with the new dotLottie Runtimes.</p>
+        <div className="flex space-x-4 mt-10 max-md:w-[100%] max-sl:w-[190%] ">
           <a href="/" aria-label="Web">
             <Image src={web} alt="Web JS" />
           </a>
@@ -48,7 +49,7 @@ const Spotlight = () => {
             <Image src={android} alt="Android" />
           </a>
         </div>
-        <button className="bg-[#019d91] text-white py-4 px-12 rounded-[16px] mt-8">Visit Developer Portal</button>
+        <button className="bg-[#019d91] text-white py-4 px-12 rounded-[16px] mt-8  max-md:py-2  max-md:px-3 max-sm:w-auto max-sl:w-[300%]">Visit Developer Portal</button>
       </div>
     </div>
   );

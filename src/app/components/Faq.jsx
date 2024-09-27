@@ -36,18 +36,18 @@ const Faq = () => {
 
   return (
     <div className="bg-[#101417] p-12">
-      <div className="w-[90%] max-w-[1280px] mx-auto flex">
+      <div className="w-[90%] max-w-[1280px] mx-auto flex max-xl:flex-col max-xl:items-center">
         <div className="flex-grow">
-          <h1 className="text-[48px] text-[#ffff] font-bold">FAQs</h1>
+          <h1 className="text-[48px] text-[#ffff] font-bold max-md:text-[24px]">FAQs</h1>
         </div>
-        <div className="flex flex-col gap-4 w-[828px]">
+        <div className="flex flex-col gap-4 w-[70%]">
           {faqs.map((faq, index) => (
             <div key={index}>
               <div
                 className="h-[70px] bg-[#192023] flex items-center justify-between p-4 rounded-xl cursor-pointer"
                 onClick={() => handleToggle(index)}
               >
-                <h2 className="text-white text-[20px] font-bold">
+                <h2 className="text-white text-[20px] font-bold max-md:text-[12px] max-sm:text-[8px]">
                   {faq.question}
                 </h2>
                 <button className="text-white">
