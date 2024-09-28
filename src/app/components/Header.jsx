@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <div className="p-9 fixed bg-white w-full z-10 shadow-xl">
+    <div className="p-9 fixed bg-white w-full z-10 shadow-xl max-md:p-5">
       <div className="w-[90%] max-w-[1280px] mx-auto flex items-center justify-between">
         <Image className="w-[163px] h-[32px] cursor-pointer" src={logo} alt="Logo" />
         

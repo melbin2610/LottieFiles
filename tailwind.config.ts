@@ -13,7 +13,8 @@ const config: Config = {
      srb:"860px",
      md:"768px",
      sm:"640px",
-     sl:"361px"
+     sl:"361px",
+     zr:"320px"
 
     },
     extend: {

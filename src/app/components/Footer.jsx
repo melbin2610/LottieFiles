@@ -69,7 +69,7 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
-            <div className="flex items-center space-x-4 p-8">
+            <div className="flex items-center space-x-4 p-8 max-sra:flex-wrap">
               <span className=" flex items-center" aria-label="Region">
                 <FaGlobe className="mr-2 text-[#131212cc]" />
                 Region:
@@ -89,7 +89,7 @@ export default function Footer() {
   Made with love ❤️ from Turkey
 </h5>
 
-            <div className="flex items-center space-x-4 p-8">
+            <div className="flex items-center space-x-4 p-8 max-sra:flex-wrap">
               {['Feedback', 'press', 'Meet the team', 'Careers',].map((lang) => (
                 <Link key={lang} href="#" className="hover:text-green-500">{lang}</Link>
               ))}
