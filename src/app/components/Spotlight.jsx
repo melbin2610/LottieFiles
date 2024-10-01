@@ -20,13 +20,13 @@ const Spotlight = () => {
       }}
     >
       <div className="w-full max-w-[1280px] mx-auto flex flex-col items-center mt-8 md:mt-12 lg:mt-16 xl:mt-20">
-        <button className="text-base text-[#ffff] mt-9 sm:text-lg md:text-xl p-2 bg-[#006262] w-full max-w-[404px] text-center rounded-[15px] font-bold">
+        <button className="text-base text-[#ffff] mt-9 sm:text-lg md:text-xl p-2 bg-[#006262] w-full max-w-[404px] text-center rounded-[15px] font-bold max-sl:text-[12px]">
           Introducing the new dotLottie Runtimes
         </button>
-        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffff] font-bold mt-4 text-center">
+        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffff] font-bold mt-4 text-center max-sl:text-[18px]">
           Built for Performance and
         </h1>
-        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffff] font-bold mt-4 text-center">
+        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffff] font-bold mt-4 text-center max-sl:text-[18px]">
           Cross-Platform Consistency
         </h1>
         <p className="text-base sl:text-lg md:text-xl text-[#d6fef1b3] mt-3 text-center">

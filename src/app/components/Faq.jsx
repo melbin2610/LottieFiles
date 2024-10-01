@@ -33,17 +33,19 @@ const Faq = () => {
   ];
 
   return (
-    <div className="bg-[#101417] p-6 md:p-12">
-      <div className="w-full max-w-[1280px] mx-auto flex  justify-between max-sl:flex-col max-sl:items-center  ">
-        <h1 className="text-[36px] md:text-[48px] text-[#ffff] font-bold text-center mb-8 max-sl:text-[36px]">FAQs</h1>
-        <div className="flex flex-col gap-4 w-full max-w-[70%] ">
+    <div className="bg-[#101417] p-6 xs:p-8 sm:p-10 md:p-12 lg:p-16 xl:p-24">
+      <div className="w-full max-w-[1280px] mx-auto flex justify-between max-sra:flex-col items-center">
+        <h1 className="text-[28px] xs:text-[32px] sm:text-[36px] md:text-[48px] text-[#ffff] font-bold text-center mb-8">
+          FAQs
+        </h1>
+        <div className="flex flex-col gap-4 w-[80%] max-sra:w-[100%]">
           {faqs.map((faq, index) => (
             <div key={index}>
               <div
-                className="h-[70px] bg-[#192023] flex items-center justify-between p-4 rounded-xl cursor-pointer"
+                className="h-[70px] bg-[#192023] flex items-center justify-between p-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#2c353b]"
                 onClick={() => handleToggle(index)}
               >
-                <h2 className="text-white text-[16px] md:text-[20px] font-bold max-sl:text-[12px]">
+                <h2 className="text-white text-[16px] xs:text-[18px] sm:text-[20px] font-bold max-sl:text-[12px]">
                   {faq.question}
                 </h2>
                 <button className="text-white">
@@ -59,7 +61,7 @@ const Faq = () => {
                 </button>
               </div>
               {openIndex === index && (
-                <h3 className="mt-2 p-4 text-white bg-[#192023] rounded-xl">
+                <h3 className="mt-2 p-4 text-white bg-[#192023] rounded-xl text-[14px] xs:text-[16px]">
                   {faq.answer}
                 </h3>
               )}
