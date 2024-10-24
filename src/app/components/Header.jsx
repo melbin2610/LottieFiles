@@ -2,7 +2,7 @@
 import Image from "next/image";
 import logo from "../../../images/logo.png";
 import search from "../../../images/search.svg";
-import Link from "next/link"; // Import Link from next/link
+import Link from "next/link"; 
 import { useState } from "react";
 
 const Header = () => {
@@ -15,7 +15,9 @@ const Header = () => {
   return (
     <div className="p-9 fixed bg-white w-full z-10 shadow-xl max-md:p-5">
       <div className="w-[90%] max-w-[1280px] mx-auto flex items-center justify-between">
-        <Image className="w-[163px] h-[32px] cursor-pointer" src={logo} alt="Logo" />
+        <div className="w-[163px] h-[32px]">
+        <Image className=" cursor-pointer" src={logo} alt="Logo" />
+        </div>
         
         <div className="hidden xl:flex items-center gap-5">
           <nav className="text-base text-[#20272c] flex gap-5">
