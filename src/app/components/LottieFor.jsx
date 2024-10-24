@@ -18,13 +18,13 @@ const LottieFor = () => {
         <h1 className='text-[30px] md:text-[48px] text-[#ffff] font-bold text-center max-srb:text-[30px] max-sm:text-[20px]'>
           Lottie for Developers
         </h1>
-        <p className='text-[14px] md:text-[20px] text-[#ffff] font-thin text-center max-srb:text-[14px] max-sm:text-[10px]'>
+        <p className='text-[14px] md:text-[20px] text-[#ffff] font-thin text-center max-srb:text-[14px] max-sm:text-[13px]'>
           Discover the Lottie ecosystem for integration and tools
         </p>
-        <p className='text-[14px] md:text-[20px] text-[#ffff] font-thin text-center max-srb:text-[14px] max-sm:text-[10px]'>
+        <p className='text-[14px] md:text-[20px] text-[#ffff] font-thin text-center max-srb:text-[14px] max-sm:text-[13px]'>
           to make the implementation of Lottie easier.
         </p>
-        <button className="bg-[#019d91] text-white py-3 px-6 rounded-[16px] mt-8 font-bold max-sm:text-[10px] max-sm:w-full">
+        <button className="bg-[#019d91] text-white py-3 px-6 rounded-[16px] mt-8 font-bold max-sm:text-[13px] max-sm:w-full">
           Visit Developer Portal
         </button>
       </div>

@@ -36,7 +36,7 @@ const resources = [
   },
 ];
 
-const ResourceCard = ({ image, title, readTime,id,slug }) => (
+const ResourceCard = ({ image, title, readTime,id,  slug }) => (
   <Link href={`/${slug}`} className='w-[270px] h-[260px] bg-[#101417] mt-6'>
     <Image className="w-[100%] h-[135px] rounded-xl" src={image} alt={title} />
     <h2 className="text-[20px] text-[#ffff] font-bold mt-3  max-xl:text-[16px]">{title}</h2>
