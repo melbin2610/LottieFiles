@@ -36,19 +36,20 @@ const Spotlight = () => {
           cross-platform support with the new dotLottie Runtimes.
         </p>
         <div className="flex space-x-4 mt-6 flex-wrap justify-center">
-          {[
-            { src: web, alt: "Web JS" },
-            { src: react, alt: "React" },
-            { src: vue, alt: "Vue JS" },
-            { src: svelte, alt: "Svelte" },
-            { src: ios, alt: "iOS" },
-            { src: android, alt: "Android" },
-          ].map((img) => (
-            <a key={img.alt} href="/" aria-label={img.alt} className="flex items-center justify-center">
-              <Image src={img.src} alt={img.alt} className="max-w-[60px] sl:max-w-[70px] md:max-w-[80px] lg:max-w-[90px] xl:max-w-[100px]" />
-            </a>
-          ))}
-        </div>
+  {[
+    { src: web, alt: "Web JS", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-web/" },
+    { src: react, alt: "React", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-react/" },
+    { src: vue, alt: "Vue JS", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-vue/" },
+    { src: svelte, alt: "Svelte", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-wc/" },
+    { src: ios, alt: "iOS", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-ios/"  },
+    { src: android, alt: "Android", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-android/" },
+  ].map(({ src, alt, href }) => (
+    <a key={alt} href={href} target="_blank" rel="noopener noreferrer" aria-label={alt} className="flex items-center justify-center">
+      <Image src={src} alt={alt} className="max-w-[60px] sl:max-w-[70px] md:max-w-[80px] lg:max-w-[90px] xl:max-w-[100px]" />
+    </a>
+  ))}
+</div>
+
         <button className="bg-[#019d91] text-white py-3 px-6 rounded-[16px] mt-6 md:mt-8">
           Visit Developer Portal
         </button>
