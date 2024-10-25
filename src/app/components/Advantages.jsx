@@ -23,49 +23,49 @@ const Advantages = () => {
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col items-center max-sl:h-[100%]">
             <Image className="w-[22%] sm:w-[30%]" src={reduce} alt="Reduced file size" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-5 max-sl:text-[17px]">Reduced file size</h1>
-            <h2 className="text-[16px] sm:text-[20px] text-[#5e706d] font-bold text-center  max-sl:text-[11px] max-sl:h-[10%]">Compress your animations by up to 80% and scale up or down without pixelation.</h2>
+            <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal text-center  max-sl:text-[13px] max-sl:h-[10%]">Compress your animations by up to 80% and scale up or down without pixelation.</h2>
           </div>
 
           {/* Card 2 */}
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col items-center max-sl:h-[100%]">
             <Image className="w-[22%] sm:w-[30%]" src={theme} alt="Theming" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-4 max-sl:text-[17px]">Theming</h1>
-            <h2 className="text-[16px] sm:text-[20px] text-[#5e706d] font-bold text-center max-sl:text-[11px]">Adapt your animations effortlessly for dark mode, light mode, or user-custom modes.</h2>
+            <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal text-center max-sl:text-[13px]">Adapt your animations effortlessly for dark mode, light mode, or user-custom modes.</h2>
           </div>
 
           {/* Card 3 */}
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col items-center max-sl:h-[100%]">
             <Image className="w-[22%] sm:w-[30%]" src={interactivity} alt="Interactivity" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-4 max-sl:text-[17px]">Interactivity</h1>
-            <h2 className="text-[16px] sm:text-[20px] text-[#5e706d] font-bold text-center max-sl:text-[11px]">Make your animations interactive for a better user experience.</h2>
+            <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal text-center max-sl:text-[13px]">Make your animations interactive for a better user experience.</h2>
           </div>
 
           {/* Card 4 */}
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col items-center max-sl:h-[100%]">
             <Image className="w-[22%] sm:w-[30%]" src={bundle} alt="Bundled packages" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-3 max-sl:text-[17px]">Bundled Packages</h1>
-            <h2 className="text-[16px] sm:text-[20px] text-[#5e706d] font-bold text-center max-sl:text-[11px]">Easily bundle multiple animations into one file.</h2>
+            <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal text-center max-sl:text-[13px]">Easily bundle multiple animations into one file.</h2>
           </div>
 
           {/* Card 5 */}
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col items-center max-sl:h-[100%]">
             <Image className="w-[22%] sm:w-[30%]" src={unmacthed} alt="Unmatched performance" />
-            <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-[-14px] max-sl:text-[12px]  max-sl:mt-2">Unmatched Performance</h1>
-            <h2 className="text-[16px] sm:text-[20px] text-[#5e706d] font-bold text-center max-sl:text-[11px]">The new dotLottie runtimes are powered by high-performance graphics engine ThorVG.</h2>
+            <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-[-14px] max-sl:text-[13px]  max-sl:mt-2">Unmatched Performance</h1>
+            <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal text-center max-sl:text-[13px]">The new dotLottie runtimes are powered by high-performance graphics engine ThorVG.</h2>
           </div>
 
           {/* Card 6 */}
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col items-center max-sl:h-[100%]">
             <Image className="w-[22%] sm:w-[30%]" src={performance} alt="Performance" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-1 max-sl:text-[17px]">Performance</h1>
-            <h2 className="text-[16px] sm:text-[20px] text-[#5e706d] font-bold text-center max-sl:text-[11px]">Experience fast load times and efficient rendering.</h2>
+            <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal text-center max-sl:text-[13px]">Experience fast load times and efficient rendering.</h2>
           </div>
 
           {/* Card 7 */}
           <div className="bg-[#1a2829] h-[280px] rounded-2xl p-6 flex flex-col items-center max-sl:h-[100%]">
             <Image className="w-[22%] sm:w-[30%]" src={js} alt="JavaScript support" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-0 max-sl:text-[17px]">JavaScript Support</h1>
-            <h2 className="text-[16px] sm:text-[20px] text-[#5e706d] font-bold text-center max-sl:text-[11px]">Integrate easily with JavaScript for advanced features.</h2>
+            <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal text-center max-sl:text-[13px]">Integrate easily with JavaScript for advanced features.</h2>
           </div>
         </div>
       </div>

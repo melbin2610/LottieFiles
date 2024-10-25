@@ -80,17 +80,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='flex items-center justify-between '>
-            <div>
+        <div className='flex items-center justify-between max-sra:flex-col'>
+            <div className='flex flex-col max-sra:gap-3 max-sra:text-center'>
             <h4>LottieFiles is by Design Barn Inc.</h4>
             <h4>Copyright © 2024 Design Barn Inc. All rights reserved.</h4>
             </div>
-            <h5 className="flex items-center">
+            <h5 className="flex items-center max-sra:mt-3">
   Made with love ❤️ from Turkey
 </h5>
 
-            <div className="flex items-center space-x-4 p-8 max-sra:flex-wrap">
-              {['Feedback', 'press', 'Meet the team', 'Careers',].map((lang) => (
+            <div className="flex items-center space-x-4 p-8 max-sz:text-[16px]">
+              {['Feedback', 'Press', 'Team', 'Careers',].map((lang) => (
                 <Link key={lang} href="#" className="hover:text-green-500">{lang}</Link>
               ))}
             </div>
