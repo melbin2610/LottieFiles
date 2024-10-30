@@ -14,14 +14,14 @@ const Header = () => {
   };
 
   return (
-    <div className="p-9 fixed bg-white w-full z-10 shadow-xl max-md:p-5">
+    <div className="p-9 fixed bg-white w-full z-10 shadow-xl max-md:p-5 ">
       <div className="w-[90%] max-w-[1280px] mx-auto flex items-center justify-between">
         <div className="w-[163px] h-[32px] max-sl:w-[50%]">
           <Image className=" cursor-pointer" src={logo} alt="Logo" />
         </div>
 
         <div className="  xl:flex items-center gap-5">
-          <nav className=" text-base text-[#20272c] flex gap-5 max-xl:hidden">
+          <nav className=" text-base text-[#20272c] karla_regular flex gap-5 max-xl:hidden font-normal">
             <Link
               href="/"
               className="flex items-center hover:text-green-500 transition-colors duration-200"
@@ -44,7 +44,7 @@ const Header = () => {
             </Link>
             <Link
               href="/"
-              className="flex items-center hover:text-green-500 transition-colors duration-200"
+              className=" flex items-center hover:text-green-500 transition-colors duration-200"
             >
               Integrations
               <svg
@@ -64,7 +64,7 @@ const Header = () => {
             </Link>
             <Link
               href="/"
-              className="flex items-center hover:text-green-500 transition-colors duration-200"
+              className="flex items-center  hover:text-green-500 transition-colors duration-200"
             >
               Customers
               <svg
@@ -101,10 +101,10 @@ const Header = () => {
                       height={16}
                     />
                   </div>
-                  <input
+                  <input 
                     type="text"
                     placeholder="Search animations"
-                    className="h-[38.4px] w-[300px] px-2 focus:outline-none bg-[#f3f6f6]"
+                    className="h-[38.4px] w-[300px] px-2 focus:outline-none bg-[#f3f6f6] karla_regular"
                   />
                 </div>
               </form>
@@ -119,13 +119,13 @@ const Header = () => {
               {/* Login Link */}
               <Link
                 href="/"
-                className="text-[#019d91] text-[16px] font-bold cursor-pointer hover:text-green-200 max-sm:hidden"
+                className="text-[#019d91] text-[16px] font-bold cursor-pointer hover:text-green-200 max-sm:hidden karla_bold"
               >
                 Login
               </Link>
 
               {/* Sign Up Button */}
-              <div className="bg-[#019d91] text-white py-2 px-4 rounded-[9px] w-24 font-bold cursor-pointer hover:bg-green-200 max-sm:hidden">
+              <div className="bg-[#019d91] text-white py-2 px-4 rounded-[9px] w-24 font-bold cursor-pointer hover:bg-green-200 max-sm:hidden karla_bold">
                 Sign Up
               </div>
             </div>
