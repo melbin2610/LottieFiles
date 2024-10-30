@@ -2,4 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url('../fonts/Karla-Regular.woff2') format('woff2'),
+        url('../fonts/Karla-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Karla-Bold';
+    src: url('../fonts/Karla-Bold.woff2') format('woff2'),
+        url('../fonts/Karla-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} 
+
+    @font-face {
+        font-family: 'Arboria-bold';
+        src: url('../fonts/Arboria-Bold.woff2') format('woff2'),
+            url('../fonts/Arboria-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+.arboria_bold{
+ font-family:"arboria-bold" ;
+}    
+
+.karla_bold{
+    font-family: "Karla-Bold";
+}
+.karla_regular{
+    font-family: "Karla-regular";
+}

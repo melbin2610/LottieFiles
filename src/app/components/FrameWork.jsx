@@ -100,17 +100,39 @@ public class MainActivity extends AppCompatActivity {
 const FrameWork = () => {
   const [selectedFramework, setSelectedFramework] = useState('Web');
 
+  const getSnippetColor = (wordIndex) => {
+    const colors = [
+      'text-red-800', 
+      'text-green-800', 
+      'text-white', 
+      'text-blue-800'
+    ];
+    return colors[wordIndex % colors.length]; // Cycle through colors
+  };
+
+  const renderCodeSnippet = (snippet) => {
+    return snippet.split('\n').map((line, lineIndex) => (
+      <div key={lineIndex} className="flex">
+        {line.split(/\s+/).map((word, wordIndex) => (
+          <span key={wordIndex} className={getSnippetColor(wordIndex)}>
+            {word}{' '}
+          </span>
+        ))}
+      </div>
+    ));
+  };
+
   return (
     <div className="bg-[#101417] p-6 flex flex-col items-center">
       <div className='w-full max-w-[1280px] mx-auto'>
-        <h1 className='text-center text-[32px] sm:text-[40px] md:text-[48px] text-[#ffff] font-bold'>Robust Framework Integrations</h1>
-        <h2 className='text-center text-[16px] sm:text-[18px] md:text-[20px] text-[#5e706d] font-bold'>
+        <h1 className='text-center text-[32px] sm:text-[40px] md:text-[48px] text-[#ffff] arboria_bold font-bold'>Robust Framework Integrations</h1>
+        <h2 className='text-center text-[16px] sm:text-[18px] md:text-[20px] text-[#5e706d] font-bold karla_regular'>
           With our runtimes, integrating with various popular frameworks is effortless.
         </h2>
       </div>
       <div className="w-full max-w-[90%] h-[326px] border border-gray-500 rounded-[10px] mt-14 flex flex-col items-center max-sm:hidden">
         <div className='bg-[#20272c] w-full p-4'>
-          <nav className="text-base text-[#ffff] flex justify-center gap-[20px] font-[16px]">
+          <nav className="text-base text-[#ffff] flex justify-center gap-[20px] font-[16px] karla_regular">
             {["Web", "React", "VueJS", "Svelte", "iOS", "Android"].map(framework => (
               <a
                 key={framework}
@@ -126,16 +148,16 @@ const FrameWork = () => {
             ))}
           </nav>
         </div>
-        <div className="bg-[#20272c] w-[90%] h-[216px] rounded-xl mt-5 overflow-auto p-5">
+        <div className="bg-[#20272c] w-[90%] h-[216px] rounded-xl mt-5 overflow-auto p-5 karla_regular">
           <pre className="p-4 text-xs">
-            <code className="text-[#fff] text-[14px]">
-              {codeSnippets[selectedFramework]}
+            <code className="text-[14px]">
+              {renderCodeSnippet(codeSnippets[selectedFramework])}
             </code>
           </pre>
         </div>
       </div>
-      <div className="flex space-x-10 mt-10 flex-wrap justify-center">
-        {[
+      <div className="flex space-x-10 mt-10 flex-wrap justify-center karla_regular">
+        {[ 
           { src: web, alt: "Web JS", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-web/" },
           { src: react, alt: "React", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-react/" },
           { src: vue, alt: "Vue JS", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-vue/" },
@@ -150,31 +172,15 @@ const FrameWork = () => {
       </div>
 
       <button 
-  className="
-    bg-[#019d91] 
-    text-white 
-    py-2 
-    px-4 
-    rounded-[16px] 
-    mt-8 
-    font-bold 
-    text-[14px] 
-    sl:py-3 sl:px-6 sl:text-[16px] 
-    sz:py-4 sz:px-8 sz:text-[18px] 
-    sm:py-5 sm:px-10 sm:text-[20px] 
-    md:py-6 md:px-12 md:text-[22px] 
-    srb:py-7 srb:px-14 srb:text-[22px] 
-    sra:py-8 sra:px-15 sra:text-[24px] 
-    xl:py-8 xl:px-16 xl:text-[26px]
-  " 
-  aria-label="Visit Developer Portal"
->
-  Visit Developer Portal
-</button>
-
+        className="bg-[#019d91] text-white py-2 px-4 rounded-[16px] mt-8 font-bold text-[14px] sl:py-3 sl:px-6 sl:text-[16px] 
+        sz:py-4 sz:px-8 sz:text-[18px] sm:py-5 sm:px-10 sm:text-[20px] 
+        md:py-6 md:px-12 md:text-[22px] srb:py-7 srb:px-14 srb:text-[22px] 
+        sra:py-8 sra:px-15 sra:text-[24px] xl:py-8 xl:px-16 xl:text-[26px] karla_regular"
+        aria-label="Visit Developer Portal">
+        Visit Developer Portal
+      </button>
     </div>
   );
 }
 
 export default FrameWork;
- 

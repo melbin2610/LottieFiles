@@ -24,9 +24,9 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 text-gray-700 text-sm">
+    <footer className="bg-gray-50 text-gray-700 text-sm karla_regular">
       <div className="max-w-screen-xl mx-auto px-4 py-24 md:px-6  text-[16px]">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 ">
           {footerLinks.map(({ title, items }, idx) => (
             <div className="flex flex-col" key={title}>
               <h3 className="font-semibold mb-2">{title}</h3>
