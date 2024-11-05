@@ -27,7 +27,7 @@ const Spotlight = () => {
 </button>
 
 
-        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffff] arboria_bold font-bold mt-4 text-center ">
+        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl zr:w-[76%] text-[#ffff] arboria_bold font-bold mt-4 text-center ">
           Built for Performance and
         </h1>
         <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffff] arboria_bold font-bold mt-4 text-center ">
@@ -39,7 +39,7 @@ const Spotlight = () => {
         <p className="text-base sl:text-lg md:text-xl text-[#d6fef1b3] mt-1 text-center karla_regular">
           cross-platform support with the new dotLottie Runtimes.
         </p>
-        <div className="flex space-x-4 mt-6 justify-center karla_regular">
+        <div className="flex space-x-4 mt-6 justify-center karla_regular max-zr:flex-wrap">
           {[
             { src: web, alt: "Web JS", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-web/" },
             { src: react, alt: "React", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-react/" },
