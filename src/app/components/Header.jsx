@@ -34,11 +34,73 @@ const Header = () => {
         </div>
 
         <div className="xl:flex items-center gap-5">
-          <nav className="text-base text-[#20272c] karla_regular flex gap-5 max-xl:hidden font-normal">
-            <Link href="/" className="flex items-center hover:text-green-500 transition-colors duration-200">Products</Link>
-            <Link href="/" className="flex items-center hover:text-green-500 transition-colors duration-200">Integrations</Link>
-            <Link href="/" className="flex items-center hover:text-green-500 transition-colors duration-200">Customers</Link>
-            <Link href="/" className="flex items-center hover:text-green-500 transition-colors duration-200">Pricing</Link>
+        <nav className=" text-base text-[#20272c] karla_regular flex gap-5 max-xl:hidden font-normal">
+            <Link
+              href="/"
+              className="flex items-center hover:text-green-500 transition-colors duration-200"
+            >
+              Products
+              <svg
+                className="ml-1 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </Link>
+            <Link
+              href="/"
+              className=" flex items-center hover:text-green-500 transition-colors duration-200"
+            >
+              Integrations
+              <svg
+                className="ml-1 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </Link>
+            <Link
+              href="/"
+              className="flex items-center  hover:text-green-500 transition-colors duration-200"
+            >
+              Customers
+              <svg
+                className="ml-1 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </Link>
+            <Link
+              href="/"
+              className="flex items-center hover:text-green-500 transition-colors duration-200"
+            >
+              Pricing
+            </Link>
           </nav>
 
           <div className="flex gap-5 items-center">

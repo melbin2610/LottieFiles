@@ -173,9 +173,9 @@ const FrameWork = () => {
 
       <button 
         className="bg-[#019d91] text-white py-2 px-4 rounded-[16px] mt-8 font-bold text-[14px] sl:py-3 sl:px-6 sl:text-[16px] 
-        sz:py-4 sz:px-8 sz:text-[18px] sm:py-5 sm:px-10 sm:text-[20px] 
-        md:py-6 md:px-12 md:text-[22px] srb:py-7 srb:px-14 srb:text-[22px] 
-        sra:py-8 sra:px-15 sra:text-[24px] xl:py-8 xl:px-16 xl:text-[26px] karla_regular"
+        sz:py-4 sz:px-8 sz:text-[13px] sm:py-5 sm:px-10 sm:text-[14px] 
+        md:py-6 md:text-[15px]  srb:text-[16px] 
+         sra:text-[18px] xl:py-4 xl:px-12 xl:text-[20px] karla_regular"
         aria-label="Visit Developer Portal">
         Visit Developer Portal
       </button>
