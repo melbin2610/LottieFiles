@@ -3,6 +3,7 @@ import exp from "../../../images/experience.png";
 import battery from "../../../images/battery.png";
 import settings from "../../../images/settings.png";
 import ae from "../../../images/ae-.png";
+import { BsArrowRight } from "react-icons/bs";
 
 const Experience = () => {
   return (
@@ -40,14 +41,20 @@ const Experience = () => {
       description: "Effortlessly integrate AE Expressions with support across web, iOS, and Android, now seamlessly incorporated into the dotLottie player."
     }
   ].map((item, index) => (
-    <div key={index} className="flex flex-col items-center mb-8 md:mb-0 md:w-1/3">
-      <Image className="w-[70%] h-auto md:w-[40%]" src={item.img} alt="Experience Image" />
+    <div key={index} className="flex flex-col  mb-8 md:mb-0 md:w-1/3">
+      <Image className="w-[60%] h-auto md:w-[40%]" src={item.img} alt="Experience Image" />
       <h2 className="text-[18px] sl:text-[20px] md:text-[16px] srb:text-[18px] xl:text-[26px] text-[#ffff]  font-bold mt-4  arboria_bold">{item.title}</h2>
-      <p className="text-[14px] sl:text-[16px] md:text-[14px] srb:text-[20px] xl:text-[22px] text-[#5e706d] font-normal text-center w-[90%] karla_regular">{item.description}</p>
+      <p className="text-[14px] sl:text-[16px] md:text-[14px] srb:text-[20px] xl:text-[22px] text-[#5e706d] font-normal  w-[90%] karla_regular">{item.description}</p>
       {item.caseStudy && (
         <>
-          <h5 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] mt-2 karla_regular">{item.caseStudy}</h5>
-          {item.testPage && <h6 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] karla_regular">{item.testPage}</h6>}
+          <h5 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] mt-2 karla_regular flex items-center gap-3">{item.caseStudy}
+          <span><BsArrowRight /></span>
+          </h5>
+          
+          
+          {item.testPage && <h6 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] karla_regular flex items-center gap-3">{item.testPage}
+          <span><BsArrowRight /></span>
+            </h6>}
         </>
       )}
     </div>

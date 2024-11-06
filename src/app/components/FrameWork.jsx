@@ -144,7 +144,7 @@ const FrameWork = () => {
                 key={framework}
                 href="#"
                 className={`${
-                  selectedFramework === framework ? "text-green-500 border-b border-green-500 text-[20px]" : ""
+                  selectedFramework === framework ? "text-green-200 border-b border-green-500 text-[20px]" : ""
                 } transition-all duration-200`}
                 onClick={(e) => {
                   e.preventDefault();
