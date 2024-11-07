@@ -8,12 +8,12 @@ import { BsArrowRight } from "react-icons/bs";
 const Experience = () => {
   return (
     <div className="bg-[#101417] p-8 sl:p-10 sm:p-16 md:p-24 lg:p-28">
-      <div className='w-[90%] max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center'>
+      <div className='w-[90%] max-w-[1280px] mx-auto flex flex-col md:flex-row max-md:flex-col-reverse justify-between items-center'>
         <div className="mb-8 md:mb-0">
           <h1 className="text-[24px] sl:text-[30px] md:text-[40px] text-[#ffff] font-bold arboria_bold">
             Seamless Cross-Platform<br />Experience
           </h1>
-          <p className="text-[16px] sl:text-[18px] md:text-[24px] text-[#5e706d] font-normal karla_regular">
+          <p className="text-[16px] sl:text-[18px] md:text-[24px] text-[#d6fef1b3] font-normal karla_regular">
             Say goodbye to the frustration of inconsistent animations across platforms. Our dotLottie Runtimes ensure feature parity across web, Android and iOS.
           </p>
         </div>
@@ -42,17 +42,17 @@ const Experience = () => {
     }
   ].map((item, index) => (
     <div key={index} className="flex flex-col  mb-8 md:mb-0 md:w-1/3">
-      <Image className="w-[60%] h-auto md:w-[40%]" src={item.img} alt="Experience Image" />
-      <h2 className="text-[18px] sl:text-[20px] md:text-[16px] srb:text-[18px] xl:text-[26px] text-[#ffff]  font-bold mt-4  arboria_bold">{item.title}</h2>
-      <p className="text-[14px] sl:text-[16px] md:text-[14px] srb:text-[20px] xl:text-[22px] text-[#5e706d] font-normal  w-[90%] karla_regular">{item.description}</p>
+      <Image className="w-[23%] max-sl:w-[32%]" src={item.img} alt="Experience Image" />
+      <h2 className="text-[18px] sl:text-[20px] md:text-[16px] srb:text-[18px] xl:text-[26px] text-[#ffff]  font-bold mt-4  arboria_bold max-sl:text-[20px]">{item.title}</h2>
+      <p className="text-[14px] sl:text-[16px] md:text-[14px] srb:text-[20px] xl:text-[22px] text-[#d6fef1b3] font-normal  w-[90%] karla_regular max-sl:text-[18px]">{item.description}</p>
       {item.caseStudy && (
         <>
-          <h5 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] mt-2 karla_regular flex items-center gap-3">{item.caseStudy}
+          <h5 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] mt-2 karla_regular flex items-center gap-3 max-sl:text-[17px] cursor-pointer">{item.caseStudy}
           <span><BsArrowRight /></span>
           </h5>
           
           
-          {item.testPage && <h6 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] karla_regular flex items-center gap-3">{item.testPage}
+          {item.testPage && <h6 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] karla_regular flex items-center gap-3 max-sl:text-[17px] cursor-pointer">{item.testPage}
           <span><BsArrowRight /></span>
             </h6>}
         </>

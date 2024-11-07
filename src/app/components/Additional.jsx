@@ -37,18 +37,18 @@ const resources = [
 ];
 
 const ResourceCard = ({ image, title, readTime,id,  slug }) => (
-  <Link href={`/${slug}`} className='w-[270px] h-[260px] bg-[#101417] mt-6 '>
-    <Image className="w-[100%] h-[135px] rounded-xl " src={image} alt={title} />
+  <Link href={`/${slug}`} className='w-[270px] max-sm:w-[100%]  bg-[#101417] mt-6 '>
+    <Image className="w-[100%] h-[135px]  max-sm:h-auto rounded-xl " src={image} alt={title} />
     <h2 className="text-[20px] text-[#ffff] font-bold mt-3  max-xl:text-[16px]  arboria_bold">{title}</h2>
-    <p className="text-[16px] text-[#5e706d] mt-3 karla_regular">{readTime}</p>
+    <p className="text-[16px] text-[#d6fef1b3] mt-3 karla_regular max-sl:mt-[2px]">{readTime}</p>
   </Link>
 );
 
 const Additional = () => {
   return (
-    <div className='bg-[#101417] p-12'>
+    <div className='bg-[#101417] p-12 max-sm:p-2'>
       <div className='w-[90%] max-w-[1280px] mx-auto'>
-        <h1 className='text-[36px] text-[#ffff] font-bold max-sm:text-center max-xl:text-[16px]  arboria_bold'>Additional resources</h1>
+        <h1 className='text-[36px] text-[#ffff] font-bold max-sm:text-center max-sz:text-[30px] max-sl:text-[21px] arboria_bold'>Additional resources</h1>
         <div className='flex justify-between flex-wrap max-sm:justify-center '>
           {resources.map((resource, index) => ( 
             <ResourceCard key={index} {...resource} />

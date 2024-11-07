@@ -131,7 +131,7 @@ const FrameWork = () => {
         <h1 className="text-center text-[32px] sm:text-[40px] md:text-[48px] text-[#ffff] arboria_bold font-bold">
           Robust Framework Integrations
         </h1>
-        <h2 className="text-center text-[16px] sm:text-[18px] md:text-[20px] text-[#5e706d] font-bold karla_regular">
+        <h2 className="text-center text-[16px] sm:text-[18px] md:text-[20px] text-[#d6fef1b3] font-bold karla_regular">
           With our runtimes, integrating with various popular frameworks is effortless.
         </h2>
       </div>
@@ -144,7 +144,7 @@ const FrameWork = () => {
                 key={framework}
                 href="#"
                 className={`${
-                  selectedFramework === framework ? "text-green-200 border-b border-green-500 text-[20px]" : ""
+                  selectedFramework === framework ? "text-[#d6fef1b3] border-b border-green-500 text-[20px]" : ""
                 } transition-all duration-200`}
                 onClick={(e) => {
                   e.preventDefault();

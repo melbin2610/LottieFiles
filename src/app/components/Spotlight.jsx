@@ -27,10 +27,10 @@ const Spotlight = () => {
 </button>
 
 
-        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl zr:w-[76%] text-[#ffff] arboria_bold font-bold mt-4 text-center ">
+        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl zr:w-[76%] text-[#ffff] arboria_bold font-bold mt-4 text-center max-sl:text-[25px] ">
           Built for Performance and
         </h1>
-        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffff] arboria_bold font-bold mt-4 text-center ">
+        <h1 className="text-2xl sl:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffff] arboria_bold font-bold mt-4 text-center max-sl:text-[25px] ">
           Cross-Platform Consistency
         </h1>
         <p className="text-base sl:text-lg md:text-xl text-[#d6fef1b3] mt-3 text-center karla_regular">

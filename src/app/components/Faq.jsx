@@ -45,7 +45,7 @@ const Faq = () => {
                 className="h-[70px] bg-[#192023] flex items-center justify-between p-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#2c353b]"
                 onClick={() => handleToggle(index)}
               >
-                <h2 className="text-white text-[16px] xs:text-[18px] sm:text-[20px] font-bold max-sl:text-[12px]">
+                <h2 className="text-white text-[16px] xs:text-[18px] sm:text-[20px] font-bold ">
                   {faq.question}
                 </h2>
                 <button className="text-white">
@@ -61,7 +61,7 @@ const Faq = () => {
                 </button>
               </div>
               {openIndex === index && (
-                <h3 className="mt-2 p-4 text-white bg-[#192023] rounded-xl text-[14px] xs:text-[16px]">
+                <h3 className="mt-2 p-4 text-[#d6fef1b3] bg-[#192023] rounded-xl text-[16px] max-md:text-[14px] ">
                   {faq.answer}
                 </h3>
               )}

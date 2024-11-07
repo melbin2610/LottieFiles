@@ -54,7 +54,7 @@ const SinglePage = () => {
   return (
     <div className='p-4 xs:p-6 sm:p-8 md:p-12 lg:p-16 xl:p-24 2xl:p-32'>
       <div className='w-[90%] max-w-[1280px] mx-auto'>
-        <div className='flex flex-col xs:flex-row sm:flex-row gap-2 xs:gap-2 sm:gap-4 mt-36'>
+        <div className='flex flex-col xs:flex-row sm:flex-row gap-2 xs:gap-2 sm:gap-4 mt-36 karla_regular'>
           <Link href='/blog' className='flex items-center text-xs xs:text-sm sm:text-base'>
             blog <span className='ml-1'>{'>'}</span>
           </Link>
@@ -65,11 +65,11 @@ const SinglePage = () => {
             {pageData.title} <span className='ml-1'>{'>'}</span>
           </Link>
         </div>
-        <h1 className='text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-5'>
+        <h1 className='text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-5 arboria_bold'>
           {pageData.title}
         </h1>
         <div className='mt-4'>
-          <div className='flex text-[14px] xs:text-[12px] sm:text-[16px] flex-col xs:flex-row sm:flex-row items-center gap-1 xs:gap-2 sm:gap-4 text-gray-600'>
+          <div className='flex text-[14px] xs:text-[12px] sm:text-[16px] flex-col xs:flex-row sm:flex-row items-center gap-1 xs:gap-2 sm:gap-4 text-gray-600 karla_regular'>
             <Image className='block w-6 h-6 rounded-3xl xs:w-8 xs:h-8 sm:w-10 sm:h-10' src={logo} alt='Logo' />
             <Link href='/blog' className='flex items-center'>
               LottieFiles

@@ -152,9 +152,9 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-  <div className="xl:hidden bg-white p-4   ">
+  <div className="xl:hidden bg-white p-4  h-[100vh] ">
     <nav className="text-base text-[#20272c] flex flex-col gap-8 mt-4">
-      <Link href="/" className="flex items-center justify-between hover:text-green-500 transition-colors duration-200 h-[100%]">
+      <Link href="/" className="flex items-center justify-between hover:text-green-500 transition-colors duration-200 h-[]">
         Products
         <span className="ml-2">
           <MdKeyboardArrowDown />
@@ -182,7 +182,7 @@ const Header = () => {
         Pricing
       </Link>
     </nav>
-    <div className="flex justify-between items-center p-8 sm:hidden">
+    <div className="flex justify-between items-center mt-60 sm:hidden">
       <Link href="/" className="text-[#019d91] text-[16px] font-bold cursor-pointer hover:text-green-200">
         Login
       </Link>
@@ -206,9 +206,7 @@ const Header = () => {
                 placeholder="Search animations"
                 className="h-[38.4px] w-full px-2 focus:outline-none karla_regular"
               />
-              <div className="flex items-center p-2 cursor-pointer" onClick={toggleSearchMenu}>
-                <AiOutlineClose className="text-black" />
-              </div>
+              
             </div>
           </div>
 
