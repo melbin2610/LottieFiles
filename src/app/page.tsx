@@ -9,6 +9,9 @@ import Faq from "./components/Faq"
 import Additional from "./components/Additional"
 import LottieFor from "./components/LottieFor"
 import Footer from "./components/Footer"
+import Product from "./components/Product"
+import Integrations from "./components/Integrations"
+import Customers from "./components/Customers"
 
 export default function Home() {
   return (
