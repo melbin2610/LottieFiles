@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link"; // Import Link from next/link
 import web from "../../../images/Web JS.svg";
@@ -8,6 +9,8 @@ import ios from "../../../images/iOS.svg";
 import android from "../../../images/Android.svg";
 import left from "../../../images/sp-left.png";
 import right from "../../../images/sp-right.png";
+// import Lottie from "lottie-react";
+// import crakle from "../../../Animation - 1731500643903.json"
 
 const Spotlight = () => {
   return (
@@ -20,7 +23,13 @@ const Spotlight = () => {
         backgroundSize: "contain, contain",
         backgroundRepeat: "no-repeat",
       }}
+   
     >
+       {/* <div className="w-[100px]  mt-[400px] absolute">
+         <Lottie animationData={crakle}/>
+       </div> */}
+      
+      
       <div className="w-full max-w-[1280px] mx-auto flex flex-col items-center mt-8 md:mt-12 lg:mt-16 xl:mt-20">
       <button className="text-[18px] text-[#ffff] mt-9 p-2 bg-[#006262] karla_bold w-full max-w-[404px] text-center rounded-[50px] font-extrabold border-[1px] border-solid border-green-500 flex items-center justify-center gap-2 hover:bg-[#005454] hover:border-[#00b8a9] max-sz:text-[13px]">
   Introducing the new dotLottie Runtimes

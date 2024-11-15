@@ -12,6 +12,7 @@ const config: Config = {
      sra:"1080px",
      srb:"860px",
      md:"768px",
+     dm:"696px",
      sm:"640px",
      sz:"560px",
      sl:"361px",

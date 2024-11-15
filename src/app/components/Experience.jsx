@@ -5,6 +5,7 @@ import settings from "../../../images/settings.png";
 import ae from "../../../images/ae-.png";
 import { BsArrowRight } from "react-icons/bs";
 
+
 const Experience = () => {
   return (
     <div className="bg-[#101417] p-8 sl:p-10 sm:p-16 md:p-24 lg:p-28">

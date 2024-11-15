@@ -7,10 +7,11 @@ import canva from "../../../images/canva3.webp"
 import webflow from "../../../images/Webflow2.svg"
 import { SiFramer } from "react-icons/si";
 import Image from 'next/image';
+import { BsArrowRight } from "react-icons/bs";
 
 const Integrations = () => {
   return (
-    <div className='pt-40 absolute w-full mx-auto  karla_regular px-[32px] bg-[#fff] pb-[32px]'>
+    <div className='pt-40 absolute w-full mx-auto  karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden  cursor-pointer'>
        <div >
         <div className='flex gap-20'>
             
@@ -23,7 +24,7 @@ const Integrations = () => {
                 <p className='text-[#63727e]'>Cross-platform support and faster load times with the new dotlottie Runtimes</p>
             </div>
 
-            <div className='border-l border-l-gray-400 p-5'>
+            <div className='border-l border-l-gray-400 p-5 w-[17%]'>
                 <h1 className='text-[#63727e]'>Designers</h1>
                 <div className='flex flex-col gap-5 mt-6'>
                   <div className='flex gap-2 items-center'>
@@ -50,6 +51,9 @@ const Integrations = () => {
                   <span><SiProtonvpn /></span>
                   <h2>Protopie</h2>
                   </div>
+                  <h5 className=" text-[#019d91] mt-2 karla_regular flex items-center gap-3  cursor-pointer font-extrabold">Explore All 
+          <span><BsArrowRight /></span>
+          </h5>
                 </div>
                 
             </div>
@@ -62,7 +66,9 @@ const Integrations = () => {
                 <h2>Lottie to dotLOttie</h2>
                 <p className='text-[#63727e]'>Convert Lottie JSON format in seconds</p>
                 
-                <h3>Explore all tools</h3>
+                <h5 className=" text-[#019d91] mt-2 karla_regular flex items-center gap-3  cursor-pointer font-extrabold ">Explore all tools
+          <span><BsArrowRight /></span>
+          </h5>  
             </div>
             <div className='flex flex-col gap-5 mt-[40px]'>
                 <h1>SVG to lottie</h1>
@@ -72,7 +78,8 @@ const Integrations = () => {
                 <p className='text-[#63727e]'>Edit lottie animations easily by tweaking their JSON data</p>
                                          
                 <h2>Optimize Lottie</h2>
-                <p className='text-[#63727e]'>Upload and optimize your lottie animations for faster loading</p>                          
+                <p className='text-[#63727e]'>Upload and optimize your lottie animations for faster loading</p>   
+                                
             </div>
 
             <div className='flex flex-col gap-5 border-l border-l-gray-400 p-5'>

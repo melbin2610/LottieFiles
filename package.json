@@ -12,6 +12,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@lottiefiles/dotlottie-web": "^0.34.0",
+    "lottie-react": "^2.4.0",
     "next": "14.2.13",
     "prismjs": "^1.29.0",
     "react": "^18",

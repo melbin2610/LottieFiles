@@ -12,6 +12,7 @@ import Footer from "./components/Footer"
 import Product from "./components/Product"
 import Integrations from "./components/Integrations"
 import Customers from "./components/Customers"
+import Education from "./components/Education"
 
 export default function Home() {
   return (

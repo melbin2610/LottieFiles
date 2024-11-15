@@ -10,6 +10,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import Product from "./Product";
 import Integrations from "./Integrations";
 import Customers from "./Customers";
+import Education from "./Education";
 
 
 const Header = () => {
@@ -107,6 +108,30 @@ const Header = () => {
                   />
                 </svg>
               </Link>
+              
+              <Link
+                href="/"
+                className=" flex items-center hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
+                onMouseEnter={() => setHoveredItem("Education")}
+                onMouseLeave={() => setHoveredItem("")}
+              >
+                Education
+                <svg
+                  className="ml-1 w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </Link>
+              
               <Link
                 href="/"
                 className="flex items-center hover:text-green-500 transition-colors duration-200 "
@@ -300,7 +325,8 @@ const Header = () => {
       </div>
       {hoveredItem === "Product" && <Product />}
       {hoveredItem === "Integrations" && <Integrations />}
-      {hoveredItem === "Customers" && <Customers />}
+      {hoveredItem === "Customers" && <Customers/>}
+      {hoveredItem === "Education" && <Education/>}
     </>
   );
 };
