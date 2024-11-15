@@ -63,7 +63,8 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-
+              {hoveredItem === "Product" && <Product />}
+            
               <Link
                 href="/"
                 className=" flex items-center hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
@@ -86,6 +87,7 @@ const Header = () => {
                   />
                 </svg>
               </Link>
+              {hoveredItem === "Integrations" && <Integrations />}
               <Link
                 href="/"
                 className="flex items-center  hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
@@ -108,7 +110,7 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-              
+              {hoveredItem === "Customers" && <Customers/>}
               <Link
                 href="/"
                 className=" flex items-center hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
@@ -131,7 +133,7 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-              
+                {hoveredItem === "Education" && <Education/>}
               <Link
                 href="/"
                 className="flex items-center hover:text-green-500 transition-colors duration-200 "
@@ -155,7 +157,7 @@ const Header = () => {
                     <input
                       type="text"
                       placeholder="Search animations"
-                      className="h-[38.4px] w-[300px] px-2 focus:outline-none bg-[#f3f6f6] karla_regular"
+                      className="h-[38.4px] w-[100%] px-2 focus:outline-none bg-[#f3f6f6] karla_regular"
                     />
                   </div>
                 </form>
@@ -244,7 +246,9 @@ const Header = () => {
                 <span className="ml-2">
                   <MdKeyboardArrowDown />
                 </span>
+              
               </Link>
+             
               <Link
                 href="/"
                 className="flex items-center justify-between hover:text-green-500 transition-colors duration-200"
@@ -323,10 +327,10 @@ const Header = () => {
           </div>
         )}
       </div>
-      {hoveredItem === "Product" && <Product />}
-      {hoveredItem === "Integrations" && <Integrations />}
-      {hoveredItem === "Customers" && <Customers/>}
-      {hoveredItem === "Education" && <Education/>}
+      
+      
+     
+    
     </>
   );
 };
