@@ -6,9 +6,9 @@ import img4 from "../../../images/44.jpg";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
-const Education = () => {
+const Education = ({setHoveredItem}) => {
   return (
-    <div className="mt-[104px] fixed left-0 top-0  w-full mx-auto  karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden  cursor-pointer">
+    <div className="mt-[104px] fixed left-0 top-0  w-full mx-auto  karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden  cursor-pointer "  onMouseLeave={() => setHoveredItem("")}>
         <div className="flex gap-5 mt-8">
         <div>
         <h1 className="mt-4 text-[#63727e] font-semibold ml-4">Blog</h1>

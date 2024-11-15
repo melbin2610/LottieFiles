@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="p-8 fixed bg-white w-full z-10 shadow-xl max-md:p-5">
+      <div className="p-8 fixed bg-white w-full z-10 shadow-xl max-md:p-5 ">
         <div className="w-[90%] max-w-[1400px] mx-auto flex items-center justify-between relative">
           <div className="w-[163px] h-[32px] max-sl:w-[50%]">
             <Image className="cursor-pointer" src={logo} alt="Logo" />
@@ -45,7 +45,7 @@ const Header = () => {
                 href="/"
                 className="flex items-center hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
                 onMouseEnter={() => setHoveredItem("Product")}
-                onMouseLeave={() => setHoveredItem("")}
+                // onMouseLeave={() => setHoveredItem("")}
               >
                 Products
                 <svg
@@ -58,18 +58,19 @@ const Header = () => {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth={2}
+                    strokeWidth={2} 
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
               </Link>
-              {hoveredItem === "Product" && <Product />}
+              {hoveredItem === "Product" && 
+              <Product setHoveredItem={setHoveredItem} />}
             
               <Link
                 href="/"
                 className=" flex items-center hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
                 onMouseEnter={() => setHoveredItem("Integrations")}
-                onMouseLeave={() => setHoveredItem("")}
+                // onMouseLeave={() => setHoveredItem("")}
               >
                 Integrations
                 <svg
@@ -87,12 +88,13 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-              {hoveredItem === "Integrations" && <Integrations />}
+              {hoveredItem === "Integrations" && 
+              <Integrations setHoveredItem={setHoveredItem} />}
               <Link
                 href="/"
                 className="flex items-center  hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
                 onMouseEnter={() => setHoveredItem("Customers")}
-                onMouseLeave={() => setHoveredItem("")}
+                // onMouseLeave={() => setHoveredItem("")}
               >
                 Customers
                 <svg
@@ -110,12 +112,13 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-              {hoveredItem === "Customers" && <Customers/>}
+              {hoveredItem === "Customers" && 
+              <Customers setHoveredItem={setHoveredItem}/>}
               <Link
                 href="/"
                 className=" flex items-center hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
                 onMouseEnter={() => setHoveredItem("Education")}
-                onMouseLeave={() => setHoveredItem("")}
+                // onMouseLeave={() => setHoveredItem("")}
               >
                 Education
                 <svg
@@ -133,10 +136,13 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-                {hoveredItem === "Education" && <Education/>}
+                {hoveredItem === "Education" && 
+                <Education setHoveredItem={setHoveredItem}/>}
               <Link
                 href="/"
                 className="flex items-center hover:text-green-500 transition-colors duration-200 "
+                onMouseEnter={() => setHoveredItem("Pricing")}
+                onMouseLeave={() => setHoveredItem("")}
               >
                 Pricing
               </Link>

@@ -9,9 +9,9 @@ import { SiFramer } from "react-icons/si";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
-const Integrations = () => {
+const Integrations = ({setHoveredItem}) => {
   return (
-    <div className="mt-[104px] fixed left-0 top-0   karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden  cursor-pointer">
+    <div className="mt-[104px] fixed left-0 top-0   karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden  cursor-pointer"  onMouseLeave={() => setHoveredItem("")}>
       <div className="mt-8">
         <div className="flex gap-2">
           <div className="flex flex-col gap-5">

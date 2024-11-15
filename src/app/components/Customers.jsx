@@ -10,9 +10,9 @@ import c7 from "../../../images/c7.png";
 import { BsArrowRight } from "react-icons/bs";
 
 
-function Customers() {
+function Customers({setHoveredItem}) {
   return (
-    <div className="mt-[104px] fixed left-0 top-0 w-full mx-auto  karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden cursor-pointer">
+    <div className="mt-[104px] fixed left-0 top-0 w-full mx-auto  karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden cursor-pointer"  onMouseLeave={() => setHoveredItem("")}>
       <div className="flex gap-3 mt-8">
         <div>
           <h1 className="text-[#63727e] font-semibold ml-4">Case Studies</h1>

@@ -4,9 +4,9 @@ import p1 from "../../../images/p1.png";
 import p2 from "../../../images/p2.png";
 import { BsArrowRight } from "react-icons/bs";
 
-const Product = () => {
+const Product = ({setHoveredItem}) => {
   return (
-    <div className="mt-[104px] fixed left-0 top-0 w-full mx-auto  karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden  cursor-pointer">
+    <div className="mt-[104px] fixed left-0 top-0 w-full mx-auto  karla_regular px-[32px] bg-[#fff] pb-[32px] max-xl:hidden  cursor-pointer"  onMouseLeave={() => setHoveredItem("")}>
       <div>
         <div className="flex  gap-8 mt-8">
           <div>
