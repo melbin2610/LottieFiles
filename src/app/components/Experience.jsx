@@ -48,12 +48,12 @@ const Experience = () => {
       <p className="text-[14px] sl:text-[16px] md:text-[14px] srb:text-[20px] xl:text-[22px] text-[#d6fef1b3] font-normal  w-[90%] karla_regular max-sl:text-[18px]">{item.description}</p>
       {item.caseStudy && (
         <>
-          <h5 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] mt-2 karla_regular flex items-center gap-3 max-sl:text-[17px] cursor-pointer">{item.caseStudy}
+          <h5 className= "hover:text-green-800 text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] mt-2 karla_regular flex items-center gap-3 max-sl:text-[17px] cursor-pointer">{item.caseStudy}
           <span><BsArrowRight /></span>
           </h5>
           
           
-          {item.testPage && <h6 className="text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] karla_regular flex items-center gap-3 max-sl:text-[17px] cursor-pointer">{item.testPage}
+          {item.testPage && <h6 className="hover:text-green-800 text-[14px] sl:text-[16px] md:text-[16px] srb:text-[18px] xl:text-[22px] text-[#019d91] karla_regular flex items-center gap-3 max-sl:text-[17px] cursor-pointer">{item.testPage}
           <span><BsArrowRight /></span>
             </h6>}
         </>

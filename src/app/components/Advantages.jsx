@@ -21,7 +21,7 @@ const Advantages = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2 mt-10">
           {/* Card 1 */}
-          <div className="bg-[#1a2829] h-[] rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000 ease-in-out">
+          <div className="bg-[#1a2829] h-[] rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-300 delay-1000  ">
             <Image className="w-[20%] max-sl:w-[30%] " src={reduce} alt="Reduced file size" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-5 max-sl:text-[20px] arboria_bold">
               Reduced file size
