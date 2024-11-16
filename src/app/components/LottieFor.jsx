@@ -28,7 +28,7 @@ const LottieFor = () => {
         className="bg-[#019d91] text-white py-2 px-4 rounded-[16px] mt-8 font-bold text-[14px] sl:py-3 sl:px-6 sl:text-[18px] 
         sz:py-4 sz:px-8 sz:text-[13px] sm:py-5 sm:px-10 sm:text-[14px] 
         md:py-6 md:text-[15px]  srb:text-[16px] 
-         sra:text-[18px] xl:py-4 xl:px-12 xl:text-[20px] karla_regular hover:bg-[#00ddb3] delay-300 max-xl:w-[100%]"
+         sra:text-[18px] xl:py-4 xl:px-12 xl:text-[20px] karla_regular hover:bg-[#00ddb3] delay-300 max-sl:w-[100%]"
         aria-label="Visit Developer Portal">
         Visit Developer Portal
       </button>

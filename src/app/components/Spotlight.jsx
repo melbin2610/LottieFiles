@@ -9,8 +9,9 @@ import ios from "../../../images/iOS.svg";
 import android from "../../../images/Android.svg";
 import left from "../../../images/sp-left.png";
 import right from "../../../images/sp-right.png";
-// import Lottie from "lottie-react";
-// import crakle from "../../../Animation - 1731500643903.json"
+import Lottie from "lottie-react";
+import crakle from "../../../Animation - 1731500643903.json"
+import button from "../../../button.json"
 
 const Spotlight = () => {
   return (
@@ -24,9 +25,20 @@ const Spotlight = () => {
       }}
    
     >
-       {/* <div className="w-[100px]  mt-[400px] absolute">
-         <Lottie animationData={crakle}/>
+{/*     
+      <div className="flex justify-end absolute w-20">
+      <Lottie animationData={button}/>
+      </div> */}
+     
+         
+{/*       
+       <div className="mt-[130px] ml-[-80px] absolute w-[100px] ">
+       <Lottie animationData={button}/>
        </div> */}
+       
+       
+      
+       
       
       
       <div className="w-full max-w-[1280px] mx-auto flex flex-col items-center mt-8 md:mt-12 lg:mt-16 xl:mt-20 ">
@@ -64,6 +76,9 @@ const Spotlight = () => {
       />
     </Link>
   ))}
+  
+        
+       
 </div>
 
         <button 
@@ -71,7 +86,7 @@ const Spotlight = () => {
         sz:py-4 sz:px-8 sz:text-[13px] sm:py-5 sm:px-10 sm:text-[14px] 
         md:py-6 md:text-[15px]  srb:text-[16px] 
          sra:text-[18px] xl:py-4 xl:px-12 xl:text-[20px] karla_regular
-         hover:bg-[#00ddb3] delay-300 max-xl:w-[100%]"
+         hover:bg-[#00ddb3] delay-300 max-sl:w-[100%]"
         aria-label="Visit Developer Portal">
         Visit Developer Portal
       </button>
