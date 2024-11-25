@@ -4,14 +4,12 @@ import logo from "../../../images/logo.png";
 import search from "../../../images/search.svg";
 import Link from "next/link";
 import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai"; // Import close icon
+import { FaSearch } from "react-icons/fa"
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Product from "./Product";
 import Integrations from "./Integrations";
 import Customers from "./Customers";
 import Education from "./Education";
-
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,7 +32,7 @@ const Header = () => {
   return (
     <>
       <div className="p-8 fixed bg-white w-full z-10 shadow-xl max-md:p-5 ">
-        <div className="w-[90%] max-w-[1400px] mx-auto flex items-center justify-between relative">
+        <div className="wrapper flex items-center justify-between relative">
           <div className="w-[163px] h-[32px] max-sl:w-[50%]">
             <Image className="cursor-pointer" src={logo} alt="Logo" />
           </div>
@@ -58,14 +56,15 @@ const Header = () => {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth={2} 
+                    strokeWidth={2}
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
               </Link>
-              {hoveredItem === "Product" && 
-              <Product setHoveredItem={setHoveredItem} />}
-            
+              {hoveredItem === "Product" && (
+                <Product setHoveredItem={setHoveredItem} />
+              )}
+
               <Link
                 href="/"
                 className=" flex items-center hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
@@ -88,8 +87,9 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-              {hoveredItem === "Integrations" && 
-              <Integrations setHoveredItem={setHoveredItem} />}
+              {hoveredItem === "Integrations" && (
+                <Integrations setHoveredItem={setHoveredItem} />
+              )}
               <Link
                 href="/"
                 className="flex items-center  hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
@@ -112,8 +112,9 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-              {hoveredItem === "Customers" && 
-              <Customers setHoveredItem={setHoveredItem}/>}
+              {hoveredItem === "Customers" && (
+                <Customers setHoveredItem={setHoveredItem} />
+              )}
               <Link
                 href="/"
                 className=" flex items-center hover:text-green-500 transition-colors duration-200 hover:underline underline-offset-[44px] decoration-green-500 decoration-4"
@@ -136,8 +137,9 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-                {hoveredItem === "Education" && 
-                <Education setHoveredItem={setHoveredItem}/>}
+              {hoveredItem === "Education" && (
+                <Education setHoveredItem={setHoveredItem} />
+              )}
               <Link
                 href="/"
                 className="flex items-center hover:text-green-500 transition-colors duration-200 "
@@ -252,9 +254,8 @@ const Header = () => {
                 <span className="ml-2">
                   <MdKeyboardArrowDown />
                 </span>
-              
               </Link>
-             
+
               <Link
                 href="/"
                 className="flex items-center justify-between hover:text-green-500 transition-colors duration-200"
@@ -333,10 +334,6 @@ const Header = () => {
           </div>
         )}
       </div>
-      
-      
-     
-    
     </>
   );
 };

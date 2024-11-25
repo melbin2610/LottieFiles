@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link'; // Import Link from next/link
@@ -53,7 +54,7 @@ const SinglePage = () => {
 
   return (
     <div className='p-4 xs:p-6 sm:p-8 md:p-12 lg:p-16 xl:p-24 2xl:p-32'>
-      <div className='w-[90%] max-w-[1280px] mx-auto'>
+      <div className='wrapper'>
         <div className='flex flex-col xs:flex-row sm:flex-row gap-2 xs:gap-2 sm:gap-4 mt-36 karla_regular'>
           <Link href='/blog' className='flex items-center text-xs xs:text-sm sm:text-base'>
             blog <span className='ml-1'>{'>'}</span>

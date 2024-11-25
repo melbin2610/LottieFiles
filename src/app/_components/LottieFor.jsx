@@ -14,7 +14,7 @@ const LottieFor = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className='w-[90%] max-w-[1280px] mx-auto flex flex-col items-center gap-4'>
+      <div className='wrapper flex flex-col items-center gap-4'>
         <h1 className='text-[48px]  text-[#ffff] font-bold text-center arboria_bold max-srb:text-[36px] max-sz:text-[24px]'>
           Lottie for Developers
         </h1>

@@ -10,7 +10,7 @@ import js from "../../../images/js.png";
 const Advantages = () => {
   return (
     <div className="bg-[#101417] p-6 max-sz:p-2">
-      <div className="w-full max-w-[1280px] mx-auto">
+      <div className="wrapper">
         <h1 className="text-center text-[32px] max-sl:text-[22px] sm:text-[40px] md:text-[48px] text-[#ffff] font-bold arboria_bold">
           The dotLottie Advantage
         </h1>
@@ -21,7 +21,8 @@ const Advantages = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2 mt-10">
           {/* Card 1 */}
-          <div className="bg-[#1a2829] h-[] rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-300 delay-1000  ">
+          <div className="advantage-bg advantage-bg:hover rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
+            <div>
             <Image className="w-[20%] max-sl:w-[30%] " src={reduce} alt="Reduced file size" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-5 max-sl:text-[20px] arboria_bold">
               Reduced file size
@@ -29,10 +30,16 @@ const Advantages = () => {
             <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal max-sl:text-[20px] max-sl:h-[10%] karla_regular">
               Compress your animations by up to 80% and scale up or down without pixelation.
             </h2>
+            </div>
+           
           </div>
 
+
+
+
+
           {/* Card 2 */}
-          <div className="bg-[#1a2829] h-[] rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
+          <div className="advantage-bg advantage-bg:hover rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
             <Image className="w-[20%] max-sl:w-[30%]" src={theme} alt="Theming" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-4 max-sl:text-[20px] arboria_bold">Theming</h1>
             <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal max-sl:text-[20px] karla_regular">
@@ -41,7 +48,7 @@ const Advantages = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#1a2829] h-[] rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
+          <div className="advantage-bg advantage-bg:hover rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
             <Image className="w-[20%] max-sl:w-[30%]" src={interactivity} alt="Interactivity" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-4 max-sl:text-[20px] arboria_bold">Interactivity</h1>
             <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal max-sl:text-[20px] karla_regular">
@@ -50,7 +57,7 @@ const Advantages = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-[#1a2829] h-[] rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
+          <div className="advantage-bg advantage-bg:hover rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
             <Image className="w-[20%] max-sl:w-[30%]" src={bundle} alt="Bundled packages" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold  max-sl:text-[20px] arboria_bold">
               Bundled Packages
@@ -66,7 +73,7 @@ const Advantages = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-2 mt-5 ">
                  {/* Card 5 */}
-          <div className="bg-[#1a2829] h-[]  rounded-2xl p-6 flex flex-col group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
+          <div className="advantage-bg advantage-bg:hover rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
             <Image className="w-[20%] max-sl:w-[30%]" src={unmacthed} alt="Unmatched performance" />
             <h1 className="text-[48px] max-srb:text-[30px]  text-[#ffff] max-sz:text-[20px]   arboria_bold">
               Unmatched Performance
@@ -77,7 +84,7 @@ const Advantages = () => {
           </div>
            <div className=" flex flex-col gap-[30px] max-md:gap-[28px]">
                {/* Card 6 */}
-          <div className="bg-[#1a2829]  h-[] rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
+          <div className="advantage-bg advantage-bg:hover rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
             <Image className="w-[20%] max-sl:w-[30%]" src={performance} alt="Performance" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-1 max-sl:text-[20px] arboria_bold">Performance</h1>
             <h2 className="text-[16px] sm:text-[20px] text-[#d6fef1b3] font-normal max-sl:text-[20px] karla_regular">
@@ -88,7 +95,7 @@ const Advantages = () => {
           </div>
 
           {/* Card 7 */}
-          <div className="bg-[#1a2829]  h-[] rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
+          <div className="advantage-bg advantage-bg:hover rounded-2xl p-6 flex flex-col max-sl:h-[100%] group hover:bg-gradient-to-br hover:from-[#2c4c44] hover:via-transparent hover:to-transparent hover:text-white transition-all duration-1000">
             <Image className="w-[20%] max-sl:w-[30%]" src={js} alt="JavaScript support" />
             <h1 className="text-[20px] sm:text-[24px] text-[#ffff] font-bold mt-0 max-sl:text-[20px] arboria_bold">
             JS library

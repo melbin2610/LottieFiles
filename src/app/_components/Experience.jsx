@@ -9,7 +9,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Experience = () => {
   return (
     <div className="bg-[#101417] p-8 sl:p-10 sm:p-16 md:p-24 lg:p-28">
-      <div className='w-[90%] max-w-[1280px] mx-auto flex flex-col md:flex-row max-md:flex-col-reverse justify-between items-center'>
+      <div className='wrapper flex flex-col md:flex-row max-md:flex-col-reverse justify-between items-center'>
         <div className="mb-8 md:mb-0">
           <h1 className="text-[24px] sl:text-[30px] md:text-[40px] text-[#ffff] font-bold arboria_bold">
             Seamless Cross-Platform<br />Experience

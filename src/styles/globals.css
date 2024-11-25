@@ -40,3 +40,17 @@
 .karla_regular{
     font-family: "Karla-regular";
 }
+.wrapper{
+    width: 95%;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.advantage-bg{
+    background-color: #1a2829;
+    opacity: 75%;
+}
+.advantage-bg:hover{
+   opacity: 98%;
+   transition-delay: 350ms;
+  }

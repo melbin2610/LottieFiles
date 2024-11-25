@@ -28,7 +28,7 @@ const Spotlight = () => {
 
       
 
-      <div className="w-full max-w-[1280px] mx-auto flex flex-col items-center mt-8 md:mt-12 lg:mt-16 xl:mt-20 ">
+      <div className="w-[100%] flex flex-col items-center mt-8 md:mt-12 lg:mt-16 xl:mt-20 ">
         <button className="text-[20px] text-[#ffff] mt-[70px] p-[2px]  bg-[#006262] karla_bold w-full max-w-[404px]  text-center rounded-[50px] font-extrabold border-[1px] border-solid border-green-500 flex items-center justify-center gap-2 hover:bg-[#005454] hover:border-[#00b8a9] max-sm:max-w-[100%] max-sm:text-[16px]  max-sl:text-[14px]">
           Introducing the new dotLottie Runtimes
         </button>
@@ -109,7 +109,7 @@ const Spotlight = () => {
         </button>
         
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between max-sz:hidden ">
         <div className=" w-[80px] ">
           <Lottie animationData={button} />
         </div>

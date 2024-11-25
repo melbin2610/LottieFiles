@@ -127,7 +127,7 @@ const FrameWork = () => {
 
   return (
     <div className="bg-[#101417] p-6 flex flex-col items-center">
-      <div className="w-full max-w-[1280px] mx-auto">
+      <div className="wrapper">
         <h1 className="text-center text-[32px] sm:text-[40px] md:text-[48px] text-[#ffff] arboria_bold font-bold">
           Robust Framework Integrations
         </h1>
@@ -137,7 +137,7 @@ const FrameWork = () => {
       </div>
 
       <div className="w-full max-w-[90%] h-[326px] border border-gray-500 rounded-[10px] mt-14 flex flex-col items-center max-sm:hidden">
-        <div className="bg-[#20272c] w-full p-1">
+        <div className="bg-[#20272c] w-full p-1 rounded-lg">
           <nav className="text-base text-[#ffff] flex justify-center gap-[20px] font-[16px] karla_regular ">
             {["Web", "React", "VueJS", "Svelte", "iOS", "Android"].map((framework) => (
               <a
@@ -166,7 +166,7 @@ const FrameWork = () => {
         </div>
       </div>
 
-      <div className="flex gap-10 space-x-11 mt-10 justify-center karla_regular sl:space-x-3 zr:space-x-2 max-zr:flex-wrap max-sm:gap-0">
+      <div className="flex gap-10 space-x-11 mt-10 justify-center karla_regular sl:space-x-3 zr:space-x-2 max-zr:flex-wrap max-sm:gap-0 ">
         {[
           { src: web, alt: "Web JS", name: "Web", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-web/" },
           { src: react, alt: "React", name: "React", href: "https://developers.lottiefiles.com/docs/dotlottie-player/dotlottie-react/" },

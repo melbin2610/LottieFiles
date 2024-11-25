@@ -34,7 +34,7 @@ const Faq = () => {
 
   return (
     <div className="bg-[#101417] p-6 xs:p-8 sm:p-10 md:p-12 lg:p-16 xl:p-24">
-      <div className="w-full max-w-[1280px] mx-auto flex justify-between max-sra:flex-col items-center">
+      <div className="wrapper flex justify-between max-sra:flex-col">
         <h1 className="text-[28px] xs:text-[32px] sm:text-[36px] md:text-[48px] text-[#ffff] font-bold text-center mb-8  arboria_bold">
           FAQs
         </h1>
