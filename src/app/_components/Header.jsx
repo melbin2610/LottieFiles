@@ -290,7 +290,7 @@ const Header = () => {
                 Pricing
               </Link>
             </nav>
-            <div className="flex justify-between items-center mt-60 sm:hidden">
+            <div className="flex justify-between items-center mt-40 sm:hidden">
               <Link
                 href="/"
                 className="text-[#019d91] text-[16px] font-bold cursor-pointer hover:text-green-200"
